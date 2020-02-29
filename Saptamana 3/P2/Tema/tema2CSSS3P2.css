@@ -1,0 +1,31 @@
+.container{
+    border: 1px rgb(0, 204, 255) solid;
+
+}
+
+ul{
+    color: rgb(192, 42, 134);
+    
+}
+
+nav{
+    float: left;
+    width: 140px;
+    border:1px solid rgb(192, 42, 134);
+    top: 0px;
+
+}
+
+.section1, .section2, .section3{
+    border: 1px solid orange;
+    width: 90;
+    top: 0px;
+    margin-left: 140px;
+
+}
+
+
+footer{
+    border: 1px solid green;
+    width: 100%;
+}

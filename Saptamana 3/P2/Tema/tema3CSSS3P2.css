@@ -1,0 +1,7 @@
+img{
+background-clip: content-box;
+border: 5px dotted red;
+width: 200px;
+height: 150px;
+padding: 10px;
+}
