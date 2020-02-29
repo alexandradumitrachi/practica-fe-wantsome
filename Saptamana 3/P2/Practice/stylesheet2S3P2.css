@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+  }
+  
+h1{
+    visibility: hidden;
+}
+
+h2{
+    display:none;
+}
+li{
+    display: inline;
+}
