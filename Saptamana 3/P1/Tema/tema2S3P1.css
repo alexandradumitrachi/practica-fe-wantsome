@@ -1,0 +1,82 @@
+html{
+    
+    background-image: linear-gradient(to right,#87449b, white, #87449b);
+}
+
+
+h1{
+    color: blueviolet;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.form{
+    text-align: center;
+    list-style-position: inside;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.first-part{
+    color: rgb(135, 93, 163) ;
+
+}
+
+.second-part{
+    color: rgb(177, 43, 154);
+
+}
+
+.third-part{
+    color: rgb(230, 120, 138);
+}
+
+.fourth-part{
+    color: rgb(135, 48, 221);
+}
+
+.submit{
+    color: rgb(92, 8, 88);
+    background-color: #a993e5;
+    border: dotted;
+    font-weight: bold;
+    width: 90px;
+    height: 40px;
+    font-size: 20px;
+    text-size-adjust: center;
+    border-radius: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.photo{
+    color: red;
+    background-color:pink;
+    border: inset;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.textarea{
+    background-color: rgba(78, 7, 75, 0.527);
+    border-radius: 15px 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.name{
+    background-color: rgb(102, 40, 153);
+    color: oldlace;
+    border-radius: 25px;
+}
+
+.email{
+    background-color: orchid;
+    color: rgb(248, 200, 208);
+    border-radius: 25px;
+
+}
+
+.password{
+    background-color: purple;
+    color: rgba(233, 198, 233, 0.192);
+    border-radius: 25px;
+}
+
