@@ -1,0 +1,107 @@
+@media screen
+and (max-device-width: 1600px) {
+
+
+
+h1{
+    background-color: purple;
+    height: 100px;
+    width: 100%;
+    color: white;
+    margin: 0;   
+}
+
+.left{
+    background-color: rgb(75, 75, 235);
+    width: 200px;
+    color: white;
+    height: auto;
+}
+
+.main{
+    background-color: rgb(223, 207, 207);
+    width: auto;
+    color: white;
+    flex-grow: 1;
+}
+
+.right{
+    background-color: greenyellow;    
+    width: 200px;
+    color: white;
+    height: auto;
+    
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    
+}
+
+footer{
+    background-color: rgb(206, 89, 42);
+    height: 100px;
+    width: 100%;
+    color: white;
+    
+}
+
+.all{
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+}
+
+
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 1024px) {
+
+
+.container{
+    display:flex;
+    flex-direction: column;
+    flex: 1;
+}
+.main{
+    background-color: rgb(131, 50, 12);
+    flex-grow: 1;
+}
+.right{
+    background-color: rgb(168, 33, 173);
+    height: 100px;
+    width: 100%;
+    
+}
+
+.left{
+    background-color: rgb(31, 70, 6);
+    height: 100px;
+    width: 100%;
+    
+}
+
+h1{
+    height: 100px;
+    background-color: rgb(175, 146, 17);
+    margin: 0;
+}
+
+footer{
+    background-color: rgb(114, 215, 240);
+    height: 100px;
+}
+
+.all{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+  }

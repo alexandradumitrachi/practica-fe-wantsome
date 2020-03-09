@@ -1,0 +1,41 @@
+.gr{
+    background: rgb(15, 143, 15);
+}
+.container{
+    background: rgba(15, 143, 15, 0.300);
+    display: inline-flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    
+}
+.hw250{
+    width: 250px;
+    height: 250px;
+}
+
+.h70{
+    height: 70px;
+    margin: 0;
+}
+
+.bl1{
+    margin-left: 10px;
+}
+
+html{
+    background-color: #ceaebd;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+.all{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
