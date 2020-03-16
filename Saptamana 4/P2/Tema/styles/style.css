@@ -11,8 +11,8 @@
     background: url(https://www.wallpaperflare.com/static/611/834/347/street-japan-house-bicycle-wallpaper.jpg);
     background-size: 700px;
     height: 420px;
-    -webkit-filter: blur(px);
-            filter: blur(px);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
   }
   .content {
     z-index: -2;
@@ -302,10 +302,10 @@
   .section2 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
     border-top: 10px;
     border-style: solid;
     border-color: #c54c3c;
@@ -313,32 +313,36 @@
   .section3 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (3fr)(12);
-    grid-template-columns: repeat(12, 3fr);
-    -ms-grid-rows: (10vw)(7);
-    grid-template-rows: repeat(7, 10vw);
+    -ms-grid-columns: (3fr)[12];
+        grid-template-columns: repeat(12, 3fr);
+    -ms-grid-rows: (10vw)[7];
+        grid-template-rows: repeat(7, 10vw);
   }
   .s3title {
     font-size: 80px;
   }
   .s3first {
-    
-    grid-column-start: 3;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 10;
-    grid-row-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
     grid-row-end: 2;
   }
   .s3pen {
-    grid-column-start: 2;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 4;
   }
   .s3second {
-    
-    grid-column-start: 3;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 6;
-    grid-row-start: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 4;
     text-align: start;
   }
@@ -346,17 +350,19 @@
     font-size: 30px;
   }
   .s3third {
-    
-    grid-column-start: 3;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 8;
-    grid-row-start: 4;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
     grid-row-end: 8;
   }
   .s3photo {
-    
-    grid-column-start: 7;
+    -ms-grid-column: 7;
+        grid-column-start: 7;
     grid-column-end: 13;
-    grid-row-start: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
     grid-row-end: 6;
   }
   .sp3 {
@@ -365,23 +371,25 @@
   .section4 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (3fr)(12);
-    grid-template-columns: repeat(12, 3fr);
-    -ms-grid-rows: (10vw)(7);
-    grid-template-rows: repeat(7, 10vw);
+    -ms-grid-columns: (3fr)[12];
+        grid-template-columns: repeat(12, 3fr);
+    -ms-grid-rows: (10vw)[7];
+        grid-template-rows: repeat(7, 10vw);
   }
   .s4menu {
-   
-    grid-column-start: 7;
+    -ms-grid-column: 7;
+        grid-column-start: 7;
     grid-column-end: 8;
-    grid-row-start: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 4;
   }
   .s4first {
-    
-    grid-column-start: 8;
-    grid-column-end: 11; 
-    grid-row-start: 3;
+    -ms-grid-column: 8;
+        grid-column-start: 8;
+    grid-column-end: 11;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 4;
     text-align: start;
   }
@@ -389,17 +397,19 @@
     font-size: 30px;
   }
   .s4second {
-    
-    grid-column-start: 8;
+    -ms-grid-column: 8;
+        grid-column-start: 8;
     grid-column-end: 12;
-    grid-row-start: 4;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
     grid-row-end: 8;
   }
   .s4photo {
-    
-    grid-column-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 7;
-    grid-row-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
     grid-row-end: 6;
   }
   .sp4 {
@@ -408,30 +418,33 @@
   .section5 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (3fr)(12);
-    grid-template-columns: repeat(12, 3fr);
-    -ms-grid-rows: (10vw)(7);
-    grid-template-rows: repeat(7, 10vw);
+    -ms-grid-columns: (3fr)[12];
+        grid-template-columns: repeat(12, 3fr);
+    -ms-grid-rows: (10vw)[7];
+        grid-template-rows: repeat(7, 10vw);
   }
   .s5first {
-    
-    grid-column-start: 3;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
     grid-column-end: 10;
-    grid-row-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
     grid-row-end: 2;
   }
   .s5locat {
-    
-    grid-column-start: 2;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 4;
   }
   .s5first {
-   
-    grid-column-start: 3;
-    grid-column-end: 6;    
-    grid-row-start: 3;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 6;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
     grid-row-end: 4;
     text-align: start;
   }
@@ -439,18 +452,20 @@
     font-size: 30px;
   }
   .s5second {
-   
-    grid-column-start: 3;
-    grid-column-end: 8;   
-    grid-row-start: 4;
-    grid-row-end: 8;   
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 8;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 8;
   }
   .s5photo {
-    
-    grid-column-start: 8;
-    grid-column-end: 13; 
-    grid-row-start: 2;
-    grid-row-end: 5;    
+    -ms-grid-column: 8;
+        grid-column-start: 8;
+    grid-column-end: 13;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 5;
   }
   .sp5 {
     width: 600px;
