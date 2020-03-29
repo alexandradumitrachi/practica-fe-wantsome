@@ -4,11 +4,9 @@
 function Sex(CNP){
     var cnpString  = CNP.toString();
       if(cnpString[0] === '1'){
-        return "Persoana verificata este de sexul Masculin.";
-        
+        return "Persoana verificata este de sexul Masculin."; 
       }else if(cnpString[0] === '2'){
-        return "Persoana verificata este de sexul Feminin.";
-        
+        return "Persoana verificata este de sexul Feminin.";     
       }else{
         return "CNP-ul este incorect."
       }
@@ -23,6 +21,7 @@ function Sex(CNP){
   //           "CNP-ul este incorect."
   
 
+
 //   2. Scrieti o functie sub forma function expression care accepta ca argument o valoare numerica cuprinsa intre 1 si 10 si decide calificativul punctajului. Criteriile sunt urmatoarele:
 // - 1-3 = E
 // - 3-6 = D
@@ -32,20 +31,21 @@ function Sex(CNP){
 // Functia va returna un text de forma "Calificatul corespunzator punctajului [punctaj] este [calificativ]".
 
 
+
 var exam = function(points){
     if(points>=1 && points<3){
         var grade = "E";
         return "Calificatul corespunzator punctajului " + points +  " este " + grade + ".";
-     }else if(points>=3 && points<=6){
+      }else if(points>=3 && points<=6){
         var grade = "D";
-        return "Calificatul corespunzator punctajului " + points +  " este " + grade + ".";
-     }else if(points>=7 && points<=8){
+        return "Calificatul corespunzator punctajului " + points +  " este " + grade + "."; 
+      }else if(points>=7 && points<=8){
         var grade = "B";
-        return "Calificatul corespunzator punctajului " + points +  " este " + grade + ".";
-     }else if(points === 9){
+        return "Calificatul corespunzator punctajului " + points +  " este " + grade + "."; 
+      }else if(points === 9){
         var grade = "A";
         return "Calificatul corespunzator punctajului " + points +  " este " + grade + ".";
-     }else if(points === 10){
+      }else if(points === 10){
         var grade = "A+";
         return "Calificatul corespunzator punctajului " + points +  " este " + grade + ".";   
      }
@@ -63,6 +63,7 @@ var exam = function(points){
 //         "Calificatul corespunzator punctajului 7 este B."
 //         "Calificatul corespunzator punctajului 8 este B."
 //         "Calificatul corespunzator punctajului 9 este A."
+//         "Calificatul corespunzator punctajului 10 este A+."
 
 
 
@@ -77,46 +78,47 @@ var exam = function(points){
                                         // Example A
 
 
-function car(brand){
+var car = function(brand){
     if(brand === "Audi"){
      var country = "Germania";
      return "Marca "+ brand + " se produce in " + country + ".";
-   }else if(brand === "Toyota"){
+    }else if(brand === "Toyota"){
      var country = "Japonia";
-     return "Marca "+ brand + " se produce in " + country + ".";
-   }else if(brand === "Hyundai"){
+     return "Marca "+ brand + " se produce in " + country + "."; 
+    }else if(brand === "Hyundai"){
      var country = "Coreea de Sud";
-     return "Marca "+ brand + " se produce in " + country + ".";
-   }else if(brand === "Ford"){
+     return "Marca "+ brand + " se produce in " + country + "."; 
+    }else if(brand === "Ford"){
      var country = "S.U.A.";
-     return "Marca "+ brand + " se produce in " + country + ".";
-   }else if(brand === "Fiat"){
+     return "Marca "+ brand + " se produce in " + country + ".";  
+    }else if(brand === "Fiat"){
      var country = "Italia";
-     return "Marca "+ brand + " se produce in " + country + ".";
-   }else if(brand === "Bugatti"){
+     return "Marca "+ brand + " se produce in " + country + ".";   
+    }else if(brand === "Bugatti"){
      var country = "Franta";
-     return "Marca "+ brand + " se produce in " + country + ".";
-   }else if(brand === "Rolls-Royce"){
+     return "Marca "+ brand + " se produce in " + country + ".";   
+    }else if(brand === "Rolls-Royce"){
      var country = "Anglia";
      return "Marca "+ brand + " se produce in " + country + ".";
-   }else{
+    }else{
      return "Marca "+ brand + " este necunoscuta.";
    }
     
 }
 
-console.log(car("Dacia"));
+console.log(car("Hyundai"));
 
-// return>>>"Marca Dacia este necunoscuta."
+// return>>>"Marca Hyundai se produce in Coreea de Sud."
 
                                         // Example B
+                                        
 
 function car(brand){
   switch(brand){
     case "Audi":
       var country = "Germania";
       return "Marca "+ brand + " se produce in " + country + ".";
-      break;
+      break;    
     case "Toyota":
       var country = "Japonia";
       return "Marca "+ brand + " se produce in " + country + ".";
@@ -153,9 +155,9 @@ console.log(car("Rolls-Royce"));
 // return>>>>>> "Marca Rolls-Royce se produce in Anglia."
 
                                         // Example C
-
                                         
-function Findcar(brand) {
+
+function Findcar(brand) { 
     var car = {
         "Audi": "Germania",
         "Toyota": "Japonia",
@@ -163,17 +165,21 @@ function Findcar(brand) {
         "Rolls-Royce": "Anglia",
         "Fiat": "Italia",
         "Bugatti":"Franta",
-        "Ford":"S.U.A.",  
+        "Ford":"S.U.A."  
     };
-    if(car[brand]){
-        return "Marca " + brand + " se produce in " + car[brand];
-    }else{
+    if(car[brand]){     
+        return "Marca " + brand + " se produce in " + car[brand] + ".";      
+    }else{    
         return  "Marca " + brand + " este necunoscuta.";
     }
     
     }
     
-    console.log(Findcar("Dacia"));
+    console.log(Findcar("Audi"));
+    
+
+//return >>>> "Marca Dacia este necunoscuta."
+
 
 // 4. Scrieti o functie de tip IIFE care:
 // - sorteaza urmatorul array in functie de proprietatea "salary" a fiecarui obiect continut:
@@ -191,7 +197,7 @@ function Findcar(brand) {
          {name: "Danny", salary: 30500 },
          {name: "Bekker", salary: 15000}
        ];
-         var sort = cars.sort(function(a, b) {
+         var sort = cars.sort(function(a, b) {     
            return a.salary - b.salary;
        });
          
@@ -205,3 +211,4 @@ function Findcar(brand) {
 // 2: {name: "Danny", salary: 30500}
 // length: 3
 // __proto__: Array(0)
+
