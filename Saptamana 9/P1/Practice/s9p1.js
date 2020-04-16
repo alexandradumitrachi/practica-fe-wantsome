@@ -148,23 +148,22 @@ Write a function named multipleCallbacks that accepts 3 arguments:
 // console.log(multipleCallbacks(student2, printSuccess, printError));
 // console.log(multipleCallbacks(student3, printSuccess, printError));
 
+let theObject = { status: ["success", "error"] };
 
-let theObject = { status: ["success", "error"]};
-
-let success = ()=>{
-    return "The status is : success"
+let success = () => {
+  return "The status is : success";
 };
 
-let error = () =>{
-  return "The status is : error"
+let error = () => {
+  return "The status is : error";
 };
 
 const multipleCallbacks = (obj, callback1, callback2) => {
-  if(obj.status[0]=== "success"){
+  if (obj.status[0] === "success") {
     return callback1();
-  }else{
+  } else {
     return callback2();
   }
-}
+};
 
-console.log(multipleCallbacks(theObject, success, error))
+console.log(multipleCallbacks(theObject, success, error));
