@@ -121,29 +121,50 @@ Write a function named multipleCallbacks that accepts 3 arguments:
   - a function that should be called if the value of the status key is error
 */
 
-let multipleCallbacks = (obj, callback1, callback2) => {
-  for (let value of Object.values(obj)) {
-    if (value === "success") {
-      return callback1(obj);
-    } else if (value === "error") {
-      return callback2(obj);
-    }
-    return Object.keys(obj) + " wasn't graded yet!";
+// let multipleCallbacks = (obj, callback1, callback2) => {
+//   for (let value of Object.values(obj)) {
+//     if (value === "success") {
+//       return callback1(obj);
+//     } else if (value === "error") {
+//       return callback2(obj);
+//     }
+//     return Object.keys(obj) + " wasn't graded yet!";
+//   }
+// };
+
+// let student1 = { Miranda: "success" };
+// let student2 = { Jack: "error" };
+// let student3 = {Joe: ""}
+
+// let printSuccess = (name) => {
+//   return Object.keys(name) + " has passed!";
+// };
+
+// let printError = (name) => {
+//   return Object.keys(name) + " has failed!";
+// };
+
+// console.log(multipleCallbacks(student1, printSuccess, printError));
+// console.log(multipleCallbacks(student2, printSuccess, printError));
+// console.log(multipleCallbacks(student3, printSuccess, printError));
+
+
+let theObject = { status: ["success", "error"]};
+
+let success = ()=>{
+    return "The status is : success"
+};
+
+let error = () =>{
+  return "The status is : error"
+};
+
+const multipleCallbacks = (obj, callback1, callback2) => {
+  if(obj.status[0]=== "success"){
+    return callback1();
+  }else{
+    return callback2();
   }
-};
+}
 
-let student1 = { Miranda: "success" };
-let student2 = { Jack: "error" };
-let student3 = {Joe: ""}
-
-let printSuccess = (name) => {
-  return Object.keys(name) + " has passed!";
-};
-
-let printError = (name) => {
-  return Object.keys(name) + " has failed!";
-};
-
-console.log(multipleCallbacks(student1, printSuccess, printError));
-console.log(multipleCallbacks(student2, printSuccess, printError));
-console.log(multipleCallbacks(student3, printSuccess, printError));
+console.log(multipleCallbacks(theObject, success, error))
