@@ -148,6 +148,8 @@ Write a function named multipleCallbacks that accepts 3 arguments:
 // console.log(multipleCallbacks(student2, printSuccess, printError));
 // console.log(multipleCallbacks(student3, printSuccess, printError));
 
+//scnd
+
 let theObject = { status: ["success", "error"] };
 
 let success = () => {
