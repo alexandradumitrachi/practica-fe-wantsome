@@ -6,24 +6,25 @@
     <body>
         <form>
 <label for="search">Search for:</label><br>
-<input type="search" name="search" value="chocolate cheesecake recipes" size="25" aria-label="Search through site content">
+<input type="search" name="search" id="search" placeholder="chocolate cheesecake recipes" size="25" aria-label="Search through site content">
 <button>Search</button><br>
-<label for="Match">Match:</label>
-<input type="radio" name="any word">
-<label for="Any word">Any word</label>
-<input type="radio" name="all words" checked>
-<label for="All words">All words</label>
-<input type="radio" name="exact phrase">
-<label for="Exact phrase">Exact phrase</label><br>
-<input type="checkbox" name="sound" checked>
+<label>Match:</label>
+<input type="radio" id="anyWord" name="select">
+<label for="anyWord">Any word</label>
+<input type="radio" id="allWords" name="select" checked>
+<label for="allWords">All words</label>
+<input type="radio" id="exactPhrase" name="select">
+<label for="exactPhrase">Exact phrase</label><br>
+<input type="checkbox" id="matching" name="sound" checked>
 <label for="matching">Sound-alike matching</label><br>
-<label for="Dated">Dated:</label>
-<input type="radio">
-<select id="dated">
+<label for="dated">Dated:</label>
+<input type="radio" name="dte" id="dated">
+<select>
     <option value="last year">Within the last year</option>
     <option value="last month">Within the last month</option>
     <option value="last week">Within the last week</option>
 </select><br>
+<input type="radio" style="padding-top: 50px"  name="dte"checked >
 <label for="from">From:</label>
 <select id="month">
     <option value="sept">September</option>
@@ -72,11 +73,10 @@
     <option value="6">6</option>
     <option value="7">7</option>
 </select>
-<label for=",">,</label>
+<label>,</label>
 <input type="text" name="year" value="2009" size="5"><br>
-<input type="radio" checked>
-<label for="to">To:</label>
-<select id="month">
+<label style="margin-left: 24px;">To:</label>
+<select id="month_1">
     <option value="oct">October</option>
     <option value="nov">November</option>
     <option value="dec">Decembre</option>
@@ -90,7 +90,7 @@
     <option value="aug">August</option>
     <option value="sept">September</option>
 </select>
-<select id="day">
+<select id="day_1">
     <option value="18">18</option>
     <option value="19">19</option>
     <option value="20">20</option>
@@ -144,7 +144,7 @@
     <option value="without">without</option>
 </select>
 <label for="summaries">summaries</label><br>
-<label for="sort by">Sort by:</label>
+<label for="sortBy">Sort by:</label>
 <select>
     <option value="relevance">relevance</option>
     <option value="new">newest</option>
