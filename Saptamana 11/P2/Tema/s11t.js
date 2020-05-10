@@ -74,8 +74,8 @@ console.log(avgLengthOfNames);
 //ex composedValue(square, double, 5);  // 100
 // functia square returneaza patratul numarului iar double - dublul numarului
 
-const square = (no) => no * no;
-const double = (no) => no * 2;
+const square = no => no * no;
+const double = no => no * 2;
 const composedValue = (fn1, fn2, value) => fn1(fn2(value));
 
 console.log(composedValue(square, double, 5));
@@ -86,7 +86,7 @@ console.log(composedValue(square, double, 5));
 // myFunction(5)  --> 100
 // myFunction(10) --> 400  ...etc
 
-const compose = (nmr) => square(double(nmr));
+const compose = nmr => square(double(nmr));
 
 console.log(compose(10));
 
@@ -94,7 +94,7 @@ console.log(compose(10));
 //faceti o functie find care ia ca parametrii un array si o functie care testeaza arrayul si returneaza doar elmentele care trec testele.
 // find([1,2,3,4,5], isOdd); returneaza 1 3 5
 
-const isOdd = (numbr) => numbr.filter((numbr) => numbr % 2 === 1);
+const isOdd = numbr => numbr.filter((numbr) => numbr % 2 === 1);
 const find = (array, fn) => fn(array);
 
 console.log(find([1, 2, 3, 4, 5], isOdd));
