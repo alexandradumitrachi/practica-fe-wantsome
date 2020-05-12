@@ -109,9 +109,9 @@ class Transaction {
   }
 }
 
-const transaction1 = new Transaction("Gigi", "HSBC", "300", "12345");
-const transaction2 = new Transaction("Joe", "HSBC", "1000", "87653");
-const transaction3 = new Transaction("Dony", "HSBC", "500", "09872");
+const transaction1 = new Transaction("Gigi", "HSBC", 300, "12345");
+const transaction2 = new Transaction("Joe", "HSBC", 1000, "87653");
+const transaction3 = new Transaction("Dony", "HSBC", 500, "09872");
 
 console.log(transaction1);
 console.log(transaction2);
